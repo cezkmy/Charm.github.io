@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character set, compatibility, viewport, and page title -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charme Fernandez</title>
+
+    <!-- Linking Google Fonts -->
+    <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap' rel='stylesheet'>
+
+    <!-- Internal styles for the document -->
+    <style>
+        /* Global styles for smooth scrolling and box-sizing */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles using the Poppins font and a gradient background with an image */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(143, 69, 69, 0.6)), url(/c.jpg);
+            height: 100vh;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            transition: 0.3s;
+        }
+
+        /* Navigation styles */
+        nav {
+            width: 100%;
+            position: relative;
+            top: 0;
+            left: 0;
+            z-index: 99;
+        }
+
+        /* Styles for the navigation content */
+        .nav__content {
+            max-width: var(--max-width);
+            margin: auto;
+            padding: 1.5rem 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+        }
+
+        /* Unordered list styles for navigation links */
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            list-style: none;
+            transition: left 0.3s;
+        }
+
+        /* Styles for navigation link items */
+        ul li a {
+            padding: 0.5rem 1rem;
+            border: 2px solid transparent;
+            text-decoration: none;
+            font-weight: 600;
+            color: rgb(104, 22, 69);
+            transition: 0.3s;
+        }
+
+        /* Hover styles for navigation link items */
+        ul li a:hover {
+            border-top-color: rgba(143, 69, 69, 0.6);
+            border-bottom-color: rgba(143, 69, 69, 0.6);
+        }
+
+        /* Additional styles for specific navigation links */
+        ul li:nth-child(1) a:hover {
+            background-color: white;
+            border-top-color: rgba(143, 69, 69, 0.6);
+            border-bottom-color: rgba(143, 69, 69, 0.6);
+            color: rgb(179, 72, 72);
+        }
+
+        ul li:nth-child(2) a:hover {
+            background-color: white;
+            color: rgb(179, 72, 72);
+        }
+
+        ul li:nth-child(3) a:hover {
+            background-color: white;
+            border-top-color: rgba(143, 69, 69, 0.6);
+            border-bottom-color: rgba(143, 69, 69, 0.6);
+            color: rgb(179, 72, 72);
+        }
+
+        /* Container styles with a grid layout for lessons */
+        .c-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        /* Styles for individual lesson containers */
+        .c-container div {
+            flex: 1;
+            text-align: center;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Hover styles for lesson containers */
+        .c-container div:hover {
+            background-color: lightpink;
+            color: darkred;
+        }
+
+        /* Styles for lesson images within containers */
+        .c-container img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            object-fit: contain;
+            max-height: 300px;
+        }
+
+        /* Paragraph styles within lesson containers */
+        .c-container p {
+            color: black;
+            line-height: 1.5;
+        }
+          /* Footer styles */
+     footer {
+               text-align: center;
+               display: flex;
+               align-items: center;
+               justify-content: space-between;
+               padding: 1rem 2.5rem;
+               color: rgb(143, 69, 69);
+             }
+                /* Styles for footer links */
+             footer a {
+               text-decoration: none;
+               padding-inline: 1.25rem;
+               color: rgb(143, 69, 69);
+             }
+         /* Paragraph styles within footer */ 
+             footer p {
+               font-weight: 500;
+               cursor: pointer;
+               margin-right: 43%;
+             }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Section -->
+    <nav>
+        <div class="nav__content">
+            <!-- Unordered list for navigation links -->
+            <ul>
+                <li><a href="/index.html">HOME</a></li>
+                <li><a href="/blog.html">IT111 BLOG ENTRIES</a></li>
+                <li><a href="/flex.html">FLEX PAGE</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Container Section and blogs -->
+    <div class="c-container">
+
+        <div class="c1">
+            <h3>COT Pakikipaghalubilo</h3>
+            <img src="/1.jpg" alt="Lesson 1 Image">
+            <p>This COT Acquaintance was really nice. I liked the theme and design of the event; it was impressive. Sadly, I didn't enjoy it much since I decided to go home early.</p>
+        </div>
+
+        <div class="c2">
+            <h3>1st Year Acquaintance</h3>
+            <img src="/2.jpg" alt="Lesson 2 Image">
+            <p>The theme is very kikay, and I really like it. The setting and overall theme of the event are good. However, there was one game I didn't enjoy, which was the 'Pick up lines.' Unfortunately, instead of creating pick up lines, some pairs chose to insult their opponents, and surprisingly, they won the game. Despite that, the event was enjoyable, especially my outfit.</p>
+        </div>
+
+        <div class="c3">
+            <h3>Academic Mentoring</h3>
+            <img src="/3.jpg" alt="Lesson 3 Image">
+            <p>It's amusing to think that I arrived very late that day because my schedule was originally in the afternoon. Fortunately, I had something to do later in the day. Thankfully, I successfully negotiated with one of the staff in COMSOC to allow me to join in the morning session.</p>
+        </div>
+
+        <div class="c4">
+            <h3>ROTC</h3>
+            <img src="/4.jpg" alt="Lesson 4 Image">
+            <p>One of the best decisions I made was choosing ROTC as my NSTP Component. Although it was challenging to adjust at first due to the strict and responsible officers. But being an ROTC cadet tested my bad habits like arriving late and being insubordinate. Despite the difficulties, I find it interesting.</p>
+        </div>
+
+        <div class="c5">
+            <h3>Culminating</h3>
+            <img src="/5.jpg" alt="Lesson 5 Image">
+            <p>When we started performing, I felt like I wanted to be swallowed by the floor; it was incredibly embarrassing, and the thought of backing out crossed my mind. However, for the sake of grades, I persevered. Despite the fun we had, the numerous days of practice were exhausting.</p>
+        </div>
+
+        <div class="last">
+            <h3>Intramurals</h3>
+            <img src="/6.jpg" alt="HTML and CSS Image">
+            <p>This event is both enjoyable and tiring. Even though I wasn't a player. On the first day, the Comsoc gave us the 'pass by me,' making it surprisingly tiring—it felt like we were in a game called 'Treasure Hunting' haha. However, they cancelled the 'pass by me card' due to concerns raised by some students."</p>
+        </div>
+    </div>
+    <!-- Footer section -->
+       <footer>
+    <!-- Footer links and copyright information -->
+        <a href="#">Blog</a>
+        <p style="margin-right: 40%;">&copy; Charme Fernandez 2023.</p>
+       </footer>
+</body>
+
+</html>
